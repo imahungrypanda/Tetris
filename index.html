@@ -3,28 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Tetris</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styling.css">
-    <script type="text/javascript" href="./lib/bundle.js">
 
-    </script>
+    <script type="text/javascript" src="./lib/bundle.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Tetris</h1>
-    </header>
+    <div>
+      <header>
+        <h1>Tetris</h1>
+      </header>
 
-    <canvas></canvas>
+      <canvas id="canvas"></canvas>
+    </div>
 
     <aside>
-
-    </aside>
-    <aside>
-      <section>
+      <div class="score">
         score
-      </section>
-      <section>
+      </div>
+      <div class="next-tetrimino">
         next peice
-      </section>
+      </div>
     </aside>
 
   </body>
