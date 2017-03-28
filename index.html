@@ -9,9 +9,13 @@
     <script type="text/javascript" src="./lib/bundle.js"></script>
   </head>
   <body>
+    <div class="instructions">
+      <h3>Instructions:</h3>
+      <p>Use the right and left arrow keys to move a piece from side to side. Use the up arrow to rotate the piece. Use the down arrow to speed up the drop speed. Use the space bar to drop the piece.</p>
+    </div>
     <div>
       <header>
-        <h1>Tetris</h1>
+        <h1 class="title">Tetris</h1>
       </header>
 
       <canvas id="canvas"></canvas>
@@ -19,13 +23,14 @@
 
     <aside>
       <div class="score">
-        Score
+        Score:
       </div>
       <div class="next-tetrimino">
-        Next Piece
+        Next Piece:
+        <canvas id="next-tetrimino-render"></canvas>
       </div>
     </aside>
-    
+
 
   </body>
 </html>

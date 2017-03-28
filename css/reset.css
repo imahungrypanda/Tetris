@@ -12,6 +12,7 @@ html, head, body, header, h1, canvas, aside, section, div {
 }
 
 html {
+  overflow: hidden;
   width: 100%;
   height: 100%;
 }
