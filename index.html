@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
   <body>
-    <div class="instructions">
+    <!-- <div class="instructions">
       <h3>Instructions:</h3>
       <div class="">
 
@@ -31,12 +31,52 @@
           <p>Increase speed</p>
         </div>
 
-        <p>Use the space bar to drop the piece and to start a new game.</p>
+        <div class="spacebar pause">
+          <p>Spacebar: Drop/New Game</p>
+          <p>P: Pause</p>
+        </div>
       </div>
-    </div>
+    </div> -->
     <div class="tetris">
       <h1 class="title">Tetris</h1>
       <canvas id="canvas" class="tetris-board"></canvas>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+
+          <div class="instructions">
+            <h3>Instructions:</h3>
+            <div class="">
+
+              <div class="left-right-arrows">
+                <img src="http://res.cloudinary.com/dbf0xwan5/image/upload/q_10/a_270/v1490931936/1490949873_up_lwuhsc.png" alt="left-arrow">
+                <img src="http://res.cloudinary.com/dbf0xwan5/image/upload/q_10/a_90/v1490931936/1490949873_up_lwuhsc.png" alt="right-arrow">
+                <p>Move</p>
+              </div>
+
+              <div class="up-arrow">
+                <img src="http://res.cloudinary.com/dbf0xwan5/image/upload/q_10/v1490931936/1490949873_up_lwuhsc.png" alt="up-arrow">
+                <p>Rotate</p>
+              </div>
+
+              <div class="down-arrow">
+                <img src="http://res.cloudinary.com/dbf0xwan5/image/upload/q_10/a_180/v1490931936/1490949873_up_lwuhsc.png" alt="down-arrow">
+                <p>Increase speed</p>
+              </div>
+
+              <div class="spacebar pause">
+                <p>Spacebar: Drop/New Game</p>
+                <p>P: Pause</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
     <aside>
@@ -45,6 +85,10 @@
         <canvas id="next-tetrmino-render"></canvas>
       </div>
     </aside>
+
+
+
+
 
   </body>
 </html>
