@@ -41,7 +41,7 @@ img {
   font-size: 16px;
 }
 
-.instructions, .next-tetrmino {
+.instructions, .next-tetrimino {
   border: 5px solid #1B8057;
   border-radius: 35px;
   display: flex;
@@ -63,7 +63,7 @@ img {
 
 }
 
-.tetris-board, #next-tetrmino-render {
+.tetris-board, #next-tetrimino-render {
   background-color: #FEF2A0;
 }
 

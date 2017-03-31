@@ -1,6 +1,8 @@
 ## Tetris
+
+!
 #### Background
-Tetris is a classic game from the 1980's where tiles(tetrominoes), made up of 4 squares, are arranged into a row. When a row is filled it is cleared. Tetrominos are randomly picked and slowly drop down until either hitting the base of the board or another tetromino. The tetrominoes slowly move faster as more lines are cleared. The game ends when the tetrominoes are stacked all the way up and are outside the top of the board.
+Tetris is a classic game from the 1980's where tiles(tetriminos), made up of 4 squares, are arranged into a row. When a row is filled it is cleared. Tetriminos are randomly picked and slowly drop down until either hitting the base of the board or another tetrimino. The tetriminos slowly move faster as more lines are cleared. The game ends when the tetriminos are stacked all the way up and are outside the top of the board.
 
 https://en.wikipedia.org/wiki/Tetris
 
@@ -39,4 +41,4 @@ Day 2: Learn more about how to use Canvas to make the pieces render with differe
 
 Day 3: Finish the rest of the controls(Rotate, Drop, Speed increase). Check to be sure that pieces stay within the walls when they are rotated by the edge. Check that when a line of pieces is filled it removes them.
 
-Day 4: Get score working. Implement speed increase. Style. Wrap up an other lose ends. 
+Day 4: Get score working. Implement speed increase. Style. Wrap up an other lose ends.
