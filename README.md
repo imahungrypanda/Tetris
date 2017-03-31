@@ -1,44 +1,75 @@
 ## Tetris
 
-!
+![demo_2](/assets/demo_2.gif)
+
 #### Background
 Tetris is a classic game from the 1980's where tiles(tetriminos), made up of 4 squares, are arranged into a row. When a row is filled it is cleared. Tetriminos are randomly picked and slowly drop down until either hitting the base of the board or another tetrimino. The tetriminos slowly move faster as more lines are cleared. The game ends when the tetriminos are stacked all the way up and are outside the top of the board.
 
 https://en.wikipedia.org/wiki/Tetris
 
-Tetris has been one of my favorite games since I was a child. I have many great memories of playing the game with my Dad and other friends over the years. It is truly a timeless game and because of this I chose to remake it with my own twist. Panda themed!
+Tetris has been one of my favorite games since I was a child. I have many great memories of playing the game with my Dad and other friends over the years. It is truly a timeless game and because of this I chose to remake it with my own twist.
 
-(Image of panda goodness)
-
-
-#### Functionality and MVP
-This game will be able to do the following:
-
-- [ ] Start and pause
-- [ ] Rotate, drop, and increase the speed of the pieces as more lines are cleared
-- [ ] Panda/Zen theme
-- [ ] Instructions on how to play in the sidebar
-- [ ] Production README
-
-#### Wireframes
-This app will be a single page with the center being the grid of the game. On the right side there will be a score, pause, and next piece display.
-
-The game will respond to left and right to move the piece side to side and up to rotate the piece. Space bar will drop the piece.
-
-![wireframe](/docs/wireframe.png)
-
-#### Technologies
-This game will be implemented with the following technologies:
+#### Implementation
 - JavaScript
-- Vanilla DOM for starting and pausing
-- HTML5 Canvas for the drawing of pieces
-- Webpack to bundle all the JS files into one file
+- Canvas
 
-#### Timeline
-Day 1: Set up Webpack and Node. Outline a basic file structure and have the board being render on the screen by the end of the day. Have the instructions rendering, an outline of the board, and the preview square. Setup the pieces class to have a piece randomly selected.
+#### Gameplay
 
-Day 2: Learn more about how to use Canvas to make the pieces render with different panda faces. Have the random piece be rendered on the screen. Display the next piece in the preview box. Get the main game loop running. Get pieces to slowly move down, and have them stop correctly. Get key bindings working.
+There are seven different tetriminos. Combine them together to clear a line. Don't let them stack up to the top!
 
-Day 3: Finish the rest of the controls(Rotate, Drop, Speed increase). Check to be sure that pieces stay within the walls when they are rotated by the edge. Check that when a line of pieces is filled it removes them.
+- Right & Left arrow keys move a piece side to side
+- Up arrow key rotates the tetrimino
+- Down arrow increases the drop speed
+- Spacebar drops the tetrimino or starts a game
+- P pauses the game
 
-Day 4: Get score working. Implement speed increase. Style. Wrap up an other lose ends.
+#### Functionality
+- [x] Start and pause controls
+- [x] Rotation
+- [x] Drop
+- [x] Level based speed increase
+- [x] Instructions on how to play
+
+#### Tetrimino Rotate
+
+Breaking the rotate functionality into several small methods made determining if a rotation could be made. The spin method determines if it is possible. First it gets the new coordinates of where the piece would be rotated to based on which direction the rotation is going. It then checks to see if the new coordinates are empty on the board and that the rotation would not put the tetrimino outside the board. If all of these conditions are met then the piece will be rotated.
+
+
+```JavaScript
+spin(board, clockwise){
+  let rotatedCoords = this.rotatedCoords(clockwise);
+
+  if (this.validRotate(board, rotatedCoords)) {
+    this.coords = rotatedCoords;
+  }
+}
+
+validRotate(board, coords) {
+  for (let i = 0; i < coords.length; i++) {
+    if (board.filled(coords[i]) || !board.insideBoard(coords[i])) {
+      return false;
+    }
+  }
+  return true;
+}
+
+rotatedCoords(clockwise) {
+  let newCoords = [];
+
+  this.coords.forEach(coord =>
+    newCoords.push(this.rotateCoord(coord, clockwise))
+  );
+
+  return newCoords;
+}
+```
+
+#### Piece
+
+The key to making rotation simple was to have each piece know where it is on the board and having a center point to rotate around. When a new piece is created it knows it's starting location and what it's center point is.
+
+#### Future Development
+
+- [ ] Add score
+- [ ] Allow a user to pick a starting level
+- [ ] Add animations for making it through so many levels
