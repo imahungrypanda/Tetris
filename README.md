@@ -1,5 +1,7 @@
 ## Tetris
 
+[Live link](https://imahungrypanda.github.io/Tetris/)
+
 ![demo_2](/assets/demo_2.gif)
 
 #### Background
@@ -68,7 +70,7 @@ rotatedCoords(clockwise) {
 
 The key to making rotation simple was to have each piece know where it is on the board and having a center point to rotate around. When a new piece is created it knows it's starting location and what it's center point is.
 
-#### Future Development 
+#### Future Development
 
 - [ ] Add score
 - [ ] Allow a user to pick a starting level
