@@ -7,28 +7,44 @@
     <link rel="stylesheet" href="./css/styling.css">
 
     <script type="text/javascript" src="./lib/bundle.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
   <body>
     <div class="instructions">
       <h3>Instructions:</h3>
-      <p>Use the right and left arrow keys to move a piece from side to side. Use the up arrow to rotate the piece. Use the down arrow to speed up the drop speed. Use the space bar to drop the piece and to start a new game.</p>
+      <div class="">
+
+        <div class="left-right-arrows">
+          <img src="http://res.cloudinary.com/dbf0xwan5/image/upload/q_10/a_270/v1490931936/1490949873_up_lwuhsc.png" alt="left-arrow">
+          <img src="http://res.cloudinary.com/dbf0xwan5/image/upload/q_10/a_90/v1490931936/1490949873_up_lwuhsc.png" alt="right-arrow">
+          <p>Move</p>
+        </div>
+
+        <div class="up-arrow">
+          <img src="http://res.cloudinary.com/dbf0xwan5/image/upload/q_10/v1490931936/1490949873_up_lwuhsc.png" alt="up-arrow">
+          <p>Rotate</p>
+        </div>
+
+        <div class="down-arrow">
+          <img src="http://res.cloudinary.com/dbf0xwan5/image/upload/q_10/a_180/v1490931936/1490949873_up_lwuhsc.png" alt="down-arrow">
+          <p>Increase speed</p>
+        </div>
+
+        <p>Use the space bar to drop the piece and to start a new game.</p>
+      </div>
     </div>
-    <div>
-
-        <h1 class="title">Tetris</h1>
-
-
-      <canvas id="canvas"></canvas>
+    <div class="tetris">
+      <h1 class="title">Tetris</h1>
+      <canvas id="canvas" class="tetris-board"></canvas>
     </div>
 
     <aside>
-
       <div class="next-tetrmino">
-        Next Piece:
+        <h3>Next Piece:</h3>
         <canvas id="next-tetrmino-render"></canvas>
       </div>
     </aside>
-
 
   </body>
 </html>

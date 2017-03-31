@@ -4,41 +4,67 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-}
-
-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("http://res.cloudinary.com/dbf0xwan5/image/upload/q_42/v1490936533/kung-fu-panda-wallpapers-13_vw1r6c.jpg");
 }
 
 canvas {
   border: 1px solid black;
 }
 
-aside {
-    padding: 35px;
+h1 {
+  font-weight: bold;
 }
 
-.instructions {
+h3 {
+  padding: 25px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+img {
+  width: 25px;
+  height: 25px;
+}
+
+.left-right-arrows, .up-arrow, .down-arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.instructions, .next-tetrmino {
+  border: 5px solid #1B8057;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 35px;
   width: 200px;
   font-size: 16px;
+  margin: 10px;
+  background-color: #EDE9A3;
+}
+
+.tetris {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tetris-board, #next-tetrmino-render {
+  background-color: #FEF2A0;
 }
 
 .title {
   padding: 20px;
-  font-size: 36px;
+  font-size: 42px;
 }
 
 .score {
-  padding: 10px;
-  font-size: 16px;
-}
-
-.next-tetrmino {
   padding: 10px;
   font-size: 16px;
 }
