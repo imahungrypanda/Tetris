@@ -9,8 +9,6 @@ Tetris is a classic game from the 1980's where tiles(tetriminos), made up of 4 s
 
 https://en.wikipedia.org/wiki/Tetris
 
-Tetris has been one of my favorite games since I was a child. I have many great memories of playing the game with my Dad and other friends over the years. It is truly a timeless game and because of this I chose to remake it with my own twist.
-
 #### Implementation
 - JavaScript
 - Canvas
