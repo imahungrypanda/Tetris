@@ -90,6 +90,15 @@ img {
     background-color: rgba(0,0,0,0.4);
 }
 
+button {
+  position: relative;
+  margin-top: 25px;
+  left: 287px;
+  height: 20px;
+  width: 16px;
+  background-color: #EDE9A3;
+}
+
 .modal-content {
   display: flex;
   justify-content: center;
