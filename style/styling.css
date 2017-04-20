@@ -78,7 +78,6 @@ img {
 }
 
 .modal {
-    display: block;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -88,20 +87,21 @@ img {
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
   position: relative;
-  margin-top: 25px;
-  left: 287px;
-  height: 20px;
-  width: 16px;
+  top: -23px;
+  left: 138px;
   background-color: #EDE9A3;
 }
 
 .modal-content {
-  display: flex;
-  justify-content: center;
-  margin: 15% auto;
-  padding: 20px;
+  border: 5px solid #1B8057;
+  border-radius: 35px;
+  background-color: #EDE9A3;
+  padding: 30px;
 }
