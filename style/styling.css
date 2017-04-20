@@ -94,15 +94,14 @@ img {
 
 button {
   position: relative;
-  /*top: -4%;
-  left: 15%;*/
   top: -7px;
-  left: 105px;
+  left: 160px;
   background-color: #EDE9A3;
 }
 
 .pause {
-  width: 100px;
+  text-align: center;
+  width: 160px;
 }
 
 .modal-content {
