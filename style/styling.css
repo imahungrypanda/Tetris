@@ -94,14 +94,20 @@ img {
 
 button {
   position: relative;
-  top: -23px;
-  left: 138px;
+  /*top: -4%;
+  left: 15%;*/
+  top: -7px;
+  left: 105px;
   background-color: #EDE9A3;
+}
+
+.pause {
+  width: 100px;
 }
 
 .modal-content {
   border: 5px solid #1B8057;
   border-radius: 35px;
   background-color: #EDE9A3;
-  padding: 30px;
+  padding: 12px 30px 30px 30px;
 }
