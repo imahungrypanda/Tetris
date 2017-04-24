@@ -22,64 +22,59 @@
   </head>
   <body>
     <div class="tetris">
-      <h1 class="title">Tetris</h1>
-      <canvas id="canvas" class="tetris-board"></canvas>
+      <div class="title-container">
+        <h1 class="title">Tetris</h1>
+      </div>
+      <div class="content-container">
+        <canvas id="canvas" class="tetris-board"></canvas>
+
+        <aside>
+          <div class="instructions">
+            <h3>Instructions:</h3>
+            <div class="">
+
+              <div class="left-right-arrows">
+                <img src="./assets/left_arrow.png" alt="left-arrow">
+                <img src="./assets/right_arrow.png" alt="right-arrow">
+                <p>Move</p>
+              </div>
+
+              <div class="up-arrow">
+                <img src="./assets/up_arrow.png" alt="up-arrow">
+                <p>Rotate</p>
+              </div>
+
+              <div class="down-arrow">
+                <img src="./assets/down_arrow.png" alt="down-arrow">
+                <p>Increase speed</p>
+              </div>
+
+              <div class="spacebar">
+                <p>Spacebar: Drop/New Game</p>
+                <p>P: Pause</p>
+              </div>
+            </div>
+          </div>
+          <div class="next-tetrimino">
+            <h3>Next Piece:</h3>
+            <canvas id="next-tetrimino-render"></canvas>
+          </div>
+        </aside>
+      </div>
 
       <!-- The Modal -->
       <div id="myModal" class="modal">
-
         <!-- Modal content -->
         <div class="modal-content">
           <button type="button" id="close-modal" name="close-modal">x</button>
-
           <div class="">
             <div class="pause">
               <p id="modal-text">Welcome to Tetris!<br>Press Space to start.</p>
             </div>
           </div>
-
         </div>
-
       </div>
 
     </div>
-
-    <aside>
-      <div class="instructions">
-        <h3>Instructions:</h3>
-        <div class="">
-
-          <div class="left-right-arrows">
-            <img src="./assets/left_arrow.png" alt="left-arrow">
-            <img src="./assets/right_arrow.png" alt="right-arrow">
-            <p>Move</p>
-          </div>
-
-          <div class="up-arrow">
-            <img src="./assets/up_arrow.png" alt="up-arrow">
-            <p>Rotate</p>
-          </div>
-
-          <div class="down-arrow">
-            <img src="./assets/down_arrow.png" alt="down-arrow">
-            <p>Increase speed</p>
-          </div>
-
-          <div class="spacebar">
-            <p>Spacebar: Drop/New Game</p>
-            <p>P: Pause</p>
-          </div>
-        </div>
-      </div>
-      <div class="next-tetrimino">
-        <h3>Next Piece:</h3>
-        <canvas id="next-tetrimino-render"></canvas>
-      </div>
-    </aside>
-
-
-
-
-
   </body>
 </html>

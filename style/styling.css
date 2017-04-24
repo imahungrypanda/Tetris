@@ -12,6 +12,10 @@ canvas {
   border: 1px solid black;
 }
 
+.title-container {
+  text-align: center;
+}
+
 h1 {
   font-weight: bold;
 }
@@ -55,12 +59,9 @@ img {
   background-color: #EDE9A3;
 }
 
-.tetris {
+.content-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-
 }
 
 .tetris-board, #next-tetrimino-render {
