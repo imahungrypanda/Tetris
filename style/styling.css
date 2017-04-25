@@ -111,3 +111,19 @@ button {
   background-color: #EDE9A3;
   padding: 12px 30px 30px 30px;
 }
+
+footer {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.github {
+  padding-right: 15px;
+}
+
+.linkedin {
+  padding-left: 15px;
+}
