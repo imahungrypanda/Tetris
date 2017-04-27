@@ -96,13 +96,20 @@ img {
 button {
   position: relative;
   top: -7px;
-  left: 160px;
+  left: 250px;
   background-color: #EDE9A3;
+}
+
+.pause-container {
+  width: 250px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pause {
   text-align: center;
-  width: 160px;
 }
 
 .modal-content {
@@ -124,6 +131,16 @@ footer {
   padding-right: 15px;
 }
 
+.github-img {
+  width: 60px;
+  height: 60px;
+}
+
 .linkedin {
   padding-left: 15px;
+}
+
+.linkedin-img {
+  width: 65px;
+  height: 65px;
 }
