@@ -68,6 +68,45 @@ rotatedCoords(clockwise) {
 
 The key to making rotation simple was to have each piece know where it is on the board and having a center point to rotate around. When a new piece is created it knows it's starting location and what it's center point is.
 
+#### Pause, Start, and Restart
+
+Getting the stopping and starting just right was one of the hardest parts about doing this project. It was achieved by creating variables to hold the interval at which the piece falls and with 2 variables that know when the game is running or paused.
+
+```JavaScript
+start(){
+  this.game.clear();
+  this.running = true;
+
+  this.interval = setInterval(() => {
+    this.game.move();
+  }, this.intervalSpeed);
+
+  requestAnimationFrame(this.animate.bind(this));
+}
+```
+
+One of the key parts to pausing the game is to alter the modal that appears. I did this by changing the styling on the fly.
+
+```JavaScript
+// pause
+case 80:
+  e.preventDefault();
+  if (this.paused) {
+    this.modal.style.display = "none";
+    this.paused = false;
+    this.interval = setInterval(() => {
+      this.game.move();
+    }, this.intervalSpeed);
+  }
+  else {
+    clearInterval(this.interval);
+    this.modal.style.display = "flex";
+    document.getElementById('modal-text').innerHTML = "Paused<br>Press 'P' to Unpause";
+    this.paused = true;
+  }
+  break;
+```
+
 #### Future Development
 
 - [ ] Add score
